@@ -1,0 +1,119 @@
+1.
+SELECT
+    k.ten_mon,
+    k.noi_dung_tom_tat,
+    k.don_gia
+FROM
+    mon_an k
+
+
+2. // Giảm dần
+SELECT ten_loai, ten_mon, noi_dung_tom_tat, don_gia
+FROM mon_an m, loai_mon_an l
+WHERE m.ma_loai = l.ma_loai
+ORDER BY l.ten_loai, m.don_gia DESC;
+
+// Tăng dần
+SELECT ten_loai, ten_mon, noi_dung_tom_tat, don_gia
+FROM mon_an m, loai_mon_an l
+WHERE m.ma_loai = l.ma_loai
+ORDER BY l.ten_loai, m.don_gia ASC;
+
+
+3. // Tăng dần theo tên
+SELECT k.ten_khach_hang, k.dia_chi, k.dien_thoai
+FROM khach_hang k
+ORDER BY k.ten_khach_hang ASC;
+
+4.
+SELECT ten_khach_hang, dia_chi, dien_thoai
+FROM khach_hang
+WHERE ten_khach_hang LIKE "Nguyễn%"
+ORDER BY ten_khach_hang
+
+
+5.
+SELECT m.ten_mon, m.noi_dung_tom_tat, m.don_gia 
+FROM mon_an m
+ORDER BY m.don_gia DESC
+
+
+6.
+SELECT m.ten_mon, m.noi_dung_tom_tat, m.don_gia 
+FROM mon_an m
+WHERE m.ten_mon LIKE "Canh%"
+
+SELECT m.ten_mon, m.noi_dung_tom_tat, m.don_gia 
+FROM mon_an m
+WHERE LEFT(m.ten_mon,4) ="Canh"
+
+7.
+SELECT *
+FROM mon_an m
+WHERE m.ten_mon LIKE "%gà%" OR "%gà %"
+
+8.
+SELECT *
+FROM mon_an m
+WHERE m.don_gia >= 50000 AND m.don_gia <= 100000
+
+SELECT *
+FROM mon_an m
+WHERE m.don_gia  BETWEEN 50000 AND 100000
+
+9.
+SELECT m.ten_mon, m.don_gia, l.ten_loai
+FROM mon_an m, loai_mon_an l
+WHERE l.ten_loai LIKE "%súp%" and m.ma_loai = l.ma_loai 
+
+10.
+SELECT *
+FROM mon_an m
+WHERE m.don_gia > 50000 
+
+11.
+SELECT *
+FROM mon_an m
+WHERE m.ten_mon LIKE "%cơm%" OR m.ten_mon LIKE "%canh%"
+
+12.
+SELECT *
+FROM mon_an m
+ORDER BY m.don_gia DESC LIMIT 0,10
+
+13.
+SELECT m.ten_mon, m.don_gia, m.khuyen_mai
+FROM mon_an m
+
+14.
+SELECT m.ten_khach_hang, m.email, m.dia_chi, m.dien_thoai
+FROM khach_hang m
+
+
+15.
+SELECT m.ten_mon, m.noi_dung_tom_tat, m.don_gia
+FROM mon_an m
+ORDER BY m.ten_mon ASC, m.don_gia DESC
+
+16.
+SELECT m.ten_mon, m.noi_dung_tom_tat, m.don_gia
+FROM mon_an m
+WHERE RIGHT(m.ten_mon,1) = "n"
+
+
+17.
+
+18.
+SELECT *
+FROM khach_hang m
+ORDER BY m.email ASC
+
+19.
+SELECT *
+FROM khach_hang m
+ORDER BY m.email DESC
+
+20.
+
+
+

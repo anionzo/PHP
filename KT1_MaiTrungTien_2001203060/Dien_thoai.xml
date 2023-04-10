@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SanPhams>
+    <SanPham ID="1" Hinh="../KT1_MaiTrungTien_2001203060/Images_Cau234/SamSung1.JPG" >SamSung </SanPham>
+    <SanPham ID="2" Hinh="../KT1_MaiTrungTien_2001203060/Images_Cau234/Iphone1.JPG" >Iphone</SanPham>
+    <SanPham ID="3" Hinh="../KT1_MaiTrungTien_2001203060/Images_Cau234/Oppo1.JPG"> Oppo</SanPham>
+    <SanPham ID="4" Hinh="../KT1_MaiTrungTien_2001203060/Images_Cau234/Bphone1.JPG">Bphone1 </SanPham>
+    <SanPham ID="5" Hinh="../KT1_MaiTrungTien_2001203060/Images_Cau234/Nokia1.JPG" > Nokia1</SanPham>
+    <SanPham ID="6" Hinh="../KT1_MaiTrungTien_2001203060/Images_Cau234/Bakery1.JPG">Bakery1 </SanPham>
+</SanPhams>
+
+
+<!-- <SanPhams>
+    <SanPham ID="1" Hinh="../KT1_MaiTrungTien_2001203060/Images_Cau234/SamSung1.JPG" TCD="SamSung"  > </SanPham>
+    <SanPham ID="2" Hinh="../KT1_MaiTrungTien_2001203060/Images_Cau234/Iphone1.JPG" TCD="Iphone"></SanPham>
+    <SanPham ID="3" Hinh="../KT1_MaiTrungTien_2001203060/Images_Cau234/Oppo1.JPG" TCD="Oppo"> </SanPham>
+    <SanPham ID="4" Hinh="../KT1_MaiTrungTien_2001203060/Images_Cau234/Bphone1.JPG" TCD="Oppo"> </SanPham>
+    <SanPham ID="5" Hinh="../KT1_MaiTrungTien_2001203060/Images_Cau234/Nokia1.JPG" TCD="Nokia"> </SanPham>
+    <SanPham ID="6" Hinh="../KT1_MaiTrungTien_2001203060/Images_Cau234/Bakery1.JPG" TCD="Bakery"> </SanPham>
+</SanPhams> -->
