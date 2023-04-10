@@ -184,13 +184,14 @@ $pdo = null;
                     ?>
                             <div class="col-4">
                                 <div class="border">
-                                    <a>
+                             
                                         <img style="max-width: 200px; max-height:100px; padding:5px" src="../Tuan9_SQL/DuLieuBai5/image_MonAn/<?php echo $loai["hinh"] ?>" />
                                         <p>
                                             <?php echo "Món: " . $loai["ten_mon"] ?></br>
                                             <?php echo "Giá:" . $loai["don_gia"] ?>
                                         </p>
-                                    </a>
+                                        <div class="btn"> Xem chi tiết</div>
+                       
                                 </div>
                             </div>
                     <?php
@@ -204,13 +205,14 @@ $pdo = null;
                     ?>
                             <div class="col-4">
                                 <div class=" p-0 border">
-                                    <a>
+                     
                                         <img style="max-width: 200px; max-height:100px; padding:5px" src="../Tuan9_SQL/DuLieuBai5/image_MonAn/<?php echo $loai["hinh"] ?>" />
                                         <p>
                                             <?php echo "Món: " . $loai["ten_mon"] ?></br>
                                             <?php echo "Giá:" . $loai["don_gia"] ?>
                                         </p>
-                                    </a>
+                                        
+                       
                                 </div>
                             </div>
                     <?php
@@ -224,13 +226,14 @@ $pdo = null;
                     ?>
                             <div class="col-4">
                                 <div class=" p-0 border">
-                                    <a>
+                                   
                                         <img style="max-width: 200px; max-height:100px; padding:5px" src="../Tuan9_SQL/DuLieuBai5/image_MonAn/<?php echo $loai["hinh"] ?>" />
                                         <p>
                                             <?php echo "Món: " . $loai["ten_mon"] ?></br>
                                             <?php echo "Giá:" . $loai["don_gia"] ?>
                                         </p>
-                                    </a>
+                                        <div class="btn"> Xem chi tiết</div>
+
                                 </div>
                             </div>
                     <?php
