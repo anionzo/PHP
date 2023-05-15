@@ -90,7 +90,7 @@ else{
                 <button onclick="kiemTra();" class="btn btn-primary" name="btnSumit" type="submit">Create</button>
                 <a href="CreateCusome.php?ma=<?php echo $kh["ma_khach_hang"]; ?>" class="btn btn-danger" role="button" aria-pressed="true">Show Cutommer</a>
                 <?php 
-                    if($tb != NULL)
+                    if(isset($tb))
                     {
                         echo $tb;
                     }

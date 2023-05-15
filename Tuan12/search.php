@@ -1,7 +1,10 @@
 
 <?php
     include("../Class/Connecton.php");
-    $sql = "SELECT m.ma_khach_hang, m.ten_khach_hang, m.email, m.dia_chi, m.dien_thoai, m.hinh FROM khach_hang m ";
+    $txtsearch = $_POST['txt_Search'];
+    echo $txtsearch;
+    $sql = "SELECT m.ma_khach_hang, m.ten_khach_hang, m.email, m.dia_chi, m.dien_thoai, m.hinh FROM khach_hang m 
+            where  m.ten_khach_hang like '%{$txtsearch}%' ";
     $sta = $pdo->prepare($sql);
     $sta->execute();
     if ($sta->rowCount() > 0) {
@@ -46,7 +49,7 @@
                                     <img style="width:30px"  src="../Tuan11/image/<?php echo $kh["hinh"] ?>" />
                                 </td>
                                 <td>
-                                    <a href="update.php?ma=<?php echo $kh["ma_khach_hang"]; ?>" class="btn btn-primary" role="button" aria-pressed="true">Update</a>
+                                    <a href="CreateCusome.php?ma=<?php echo $kh["ma_khach_hang"]; ?>" class="btn btn-primary" role="button" aria-pressed="true">Update</a>
                                     <a href="CreateCusome.php?ma=<?php echo $kh["ma_khach_hang"]; ?>" class="btn btn-danger" role="button" aria-pressed="true">Delete</a>
                                 </td>
                             </tr>
