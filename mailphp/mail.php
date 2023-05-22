@@ -6,11 +6,7 @@ use PHPMailer\PHPMailer\SMTP;
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
-
-//To load the French version
-
-
-
+$tb="";
 function sendMail($name,$email, $subject, $body){
 
     $mail = new PHPMailer(true);
@@ -18,7 +14,7 @@ function sendMail($name,$email, $subject, $body){
 
     try {
         //Server settings
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+        //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
@@ -26,9 +22,9 @@ function sendMail($name,$email, $subject, $body){
         $mail->Password   = 'bobtkadwcnkewrbi';                                       //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-    
+        
         //Recipients
-        $mail->setFrom('mypham.thongbao@gmail.com', 'Hỗ Trợ');
+        $mail->setFrom('mypham.thongbao@gmail.com', "Xac nhan Mail cua ban!");
         $mail->addAddress($email,$name);     //Add a recipient
         //$mail->addAddress('mypham.thongbao@gmail.com');               //Name is optional
         // $mail->addReplyTo('info@example.com', 'Information');
@@ -46,9 +42,9 @@ function sendMail($name,$email, $subject, $body){
         $mail->AltBody = $body;
     
         $mail->send();
-        echo 'Message has been sent';
+        $tb = 'Message has been sent';
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        $tb = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }
 ?>

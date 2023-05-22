@@ -11,7 +11,6 @@
        <!-- MDB core JavaScript -->
        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
        <!-- Your custom scripts (optional) -->
-       <script type="text/javascript" src="css/javascript.js">
-       </script>
+       <script type="text/javascript" src="css/javascript.js"></script>
    </body>
 </html>

@@ -11,14 +11,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fefefe;
+    background: #000000;
 }
 
 .container{
     position: relative;
     width: 800px;
     height:auto;
-    background: #5c5353;
+    background: #ffffff;
     padding: 28px 32px;
     overflow: hidden;
     border-radius: 18px;
